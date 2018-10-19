@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conversion>
+  <applied-converters>
+    <converter id="DockerRunConfigurationConverterProvider" />
+    <converter id="PythonTestConverterProvider" />
+    <converter id="js-debug-configuration-converter" />
+    <converter id="js-predefined-libraries-merged" />
+  </applied-converters>
+  <project-files>
+    <file path="D:\python\.idea\dataSources.local.xml" timestamp="1539839307865" />
+    <file path="D:\python\.idea\dataSources.xml" timestamp="1539838591847" />
+    <file path="D:\python\.idea\dataSources\beb83dc8-22ae-42d8-ba96-0472db16659a.xml" timestamp="1539849492293" />
+    <file path="D:\python\.idea\dataSources\fbeaf9a3-b767-46be-adb4-bc942dbd7bef.xml" timestamp="1539836584932" />
+    <file path="D:\python\.idea\misc.xml" timestamp="1537406108945" />
+    <file path="D:\python\.idea\modules.xml" timestamp="1537405467266" />
+    <file path="D:\python\.idea\python.iml" timestamp="1537406108929" />
+    <file path="D:\python\.idea\vcs.xml" timestamp="1539327183403" />
+    <file path="D:\python\.idea\workspace.xml" timestamp="1539866898074" />
+  </project-files>
+</conversion>
+

@@ -1,0 +1,27 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="ColorChooser.RecentColors" value="128-58-65-255,,,128-67-89-255,,,128-13-1-255,,,128-65-69-255" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.76230663" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="Default.savedEditorTheme" value="_@user_Default" />
+    <property name="FileTemplates.SelectedTemplate" value="Python Script" />
+    <property name="KEYMAP" value="run" />
+    <property name="PACKAGE_FILTER" value="pymysql" />
+    <property name="PyCharm.InitialConfiguration" value="true" />
+    <property name="PyCharm.InitialConfiguration.V2" value="true" />
+    <property name="PyCharm.InitialConfiguration.V3" value="true" />
+    <property name="PyCharm.InitialConfiguration.V4" value="true" />
+    <property name="PyCharm.InitialConfiguration.V5" value="true" />
+    <property name="PyCharm.InitialConfiguration.V6" value="true" />
+    <property name="PyCharm.InitialConfiguration.V7" value="true" />
+    <property name="PyCharm.initialConfigurationShown" value="true" />
+    <property name="SearchEveryWhereHistory" value="show line" />
+    <property name="evlsprt3.182" value="14" />
+    <property name="file.chooser.recent.files" value="D:/python" />
+    <property name="file.gist.reindex.count" value="2475" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="lastTip" value="1" />
+    <property name="selected.color.option.type" value="PY.LINE_COMMENT" />
+    <property name="ts.lib.d.ts.version" value="3.0.1" />
+  </component>
+</application>

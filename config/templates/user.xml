@@ -1,0 +1,9 @@
+<templateSet group="user">
+  <template name="testJzt2Interface" value="# coding : utf-8&#10;import json&#10;import requests&#10;import configparser&#10;from InterfaceTest_jzy.Config import read_config as con&#10;from InterfaceTest_jzy.BaseInf import baseJudge&#10;&#10;config = configparser.ConfigParser()&#10;config.read('D:\python\InterfaceTest_jzy\Config\config.ini')&#10;configer = con.TestFile(config)&#10;&#10;uid = configer.carrier_uid()&#10;token = configer.carrier_token()&#10;carrier_url = configer.carrier_url()&#10;rsaKeyID = configer.common_rsaKeyID()&#10;&#10;&#10;# url&#10;url = carrier_url&#10;uri = '$interface_num$'&#10;URL = url + uri&#10;&#10;# header&#10;header = {'Content-Type': 'application/json', 'XMLHttpRequest': 'X-Requested-With'}&#10;&#10;# data&#10;datas = {&#10;    &quot;base&quot; : {&#10;        &quot;uid&quot;: uid,&#10;        &quot;token&quot;: token&#10;    },&#10;    $json_data$&#10;    }&#10;}&#10;json_datas = json.dumps(datas)&#10;&#10;# 输出结果&#10;result = requests.post(url=URL, headers=header, data=json_datas)&#10;&#10;# 对比结果&#10;r = result.text&#10;print(r)&#10;print(result.status_code)&#10;baseju = baseJudge.BaseJudge('success', r)&#10;baseju.judge()&#10;&#10;$END$" description="九州通二期接口测试模板python" toReformat="false" toShortenFQNames="true">
+    <variable name="interface_num" expression="" defaultValue="20000" alwaysStopAt="true" />
+    <variable name="json_data" expression="" defaultValue="please_input_datas" alwaysStopAt="true" />
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+</templateSet>

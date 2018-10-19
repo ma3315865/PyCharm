@@ -1,0 +1,27 @@
+1537405226833
+Mako￿stub:com.jetbrains.mako.psi.impl.MakoFileElementType,304847168￿1537405226832
+Cython￿stub:com.jetbrains.cython.psi.elementTypes.CythonFileElementType,69￿1537405226831
+SCSS￿stub:org.jetbrains.plugins.scss.psi.SassScssFileElementType,29￿1537405226830
+Less￿stub:org.jetbrains.plugins.less.psi.LessFileElementType,29￿1537405226829
+Jinja2￿stub:com.intellij.psi.tree.IStubFileElementType,304847099￿1537405226828
+SQL￿stub:com.intellij.sql.psi.stubs.SqlFileElementType,14￿1537405226827
+ECMAScript 6￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226826
+Literate CoffeeScript￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226825
+Flow￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226824
+Python￿stub:com.jetbrains.python.psi.PyFileElementType,69￿1537405226823
+Ini￿stub:com.intellij.psi.tree.IStubFileElementType,0￿1537405226822
+CoffeeScript￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226821
+JavaScript￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226820
+JSX Harmony￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226819
+Puppet￿stub:com.intellij.psi.tree.IStubFileElementType,0￿1537405226818
+PythonStub￿stub:com.jetbrains.python.pyi.PyiFileElementType,69￿1537405226817
+Markdown￿stub:com.intellij.psi.tree.IStubFileElementType,0￿1537405226816
+Sass￿stub:org.jetbrains.plugins.scss.psi.SassScssFileElementType,29￿1537405226815
+TypeScript￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226814
+TypeScript JSX￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226813
+Properties￿stub:com.intellij.lang.properties.parsing.PropertiesElementTypes$1,0￿1537405226812
+Stylus￿stub:org.jetbrains.plugins.stylus.psi.StylusFileElementType,29￿1537405226811
+ActionScript￿stub:com.intellij.lang.javascript.types.JSFileElementType,2024641187￿1537405226810
+HTML￿stub:com.intellij.psi.tree.IStubFileElementType,0￿1537405226809
+XML￿binary stub builder:com.intellij.util.xml.stubs.builder.DomStubBuilder,21￿1537405226808
+CSS￿stub:com.intellij.psi.css.CssFileElementType,29￿1537405226807

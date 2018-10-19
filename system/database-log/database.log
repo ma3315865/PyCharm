@@ -1,0 +1,1401 @@
+-- 2018-09-26 20:44:50 [python] [wenshi] [introspection] [session id: 1879497332] connected
+-- 2018-09-26 20:44:50 [python] [wenshi] [introspection] [session id: 1879497332] disconnected
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] connected
+-- [ --------------------------------------------------
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102020] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102020] results received
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102020] finished - execution time: 104 ms, fetching time: 61 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102021] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102021] results received
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102021] finished - execution time: 36 ms, fetching time: 41 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102022] 
+select id from order_sub_order
+-- ] --------------------------------------------------
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102022] error - [3D000][1046] No database selected
+-- 2018-09-26 20:46:01 [python] [wenshi] [console: wenshi] [session id: 1879497333] [statement id: 1304102022] finished - execution time: 99 ms
+-- 2018-09-26 20:46:02 [python] [wenshi] [console: wenshi] [session id: 1879497333] warning - [3D000][1046] No database selected
+-- 2018-09-26 20:47:06 [python] [wenshi] [console: wenshi] [session id: 1879497333] disconnected
+-- 2018-10-18 12:19:44 [python] [118.190.115.95] [introspection] [session id: 1997356409] connected
+-- 2018-10-18 12:19:44 [python] [118.190.115.95] [introspection] [session id: 1997356409] disconnected
+-- 2018-10-18 12:19:52 [python] [118.190.115.95] [introspection] [session id: 1997356410] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:52 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789455] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:52 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789455] results received
+-- 2018-10-18 12:19:52 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789455] finished - execution time: 94 ms, fetching time: 15 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789456] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789456] results received
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789456] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789457] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789457] results received
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789457] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789458] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789458] results received
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789458] finished - execution time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789459] 
+select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789459] results received
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789459] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789460] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789460] results received
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789460] finished - execution time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:53 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789461] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789461] results received
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789461] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789462] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789462] results received
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789462] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789463] 
+select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789463] results received
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789463] finished - execution time: 47 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789464] 
+select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* */null 
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = ?
+order by table_name, ordinal_position
+-- ] --------------------------------------------------
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789464] results received
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] [statement id: 104789464] finished - execution time: 109 ms, fetching time: 126 ms, total result sets count: 1
+-- 2018-10-18 12:19:54 [python] [118.190.115.95] [introspection] [session id: 1997356410] disconnected
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789465] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789465] results received
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789465] finished - execution time: 46 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789466] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789466] results received
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789466] finished - execution time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789467] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789467] results received
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789467] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789468] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789468] results received
+-- 2018-10-18 12:20:28 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789468] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789469] 
+select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789469] results received
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789469] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789470] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789470] results received
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789470] finished - execution time: 32 ms, fetching time: 15 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789471] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789471] results received
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789471] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789472] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789472] results received
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789472] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789473] 
+select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789473] results received
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789473] finished - execution time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789474] 
+select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* */null 
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = ?
+order by table_name, ordinal_position
+-- ] --------------------------------------------------
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789474] results received
+-- 2018-10-18 12:20:29 [python] [118.190.115.95] [introspection] [session id: 1997356411] [statement id: 104789474] finished - execution time: 109 ms, fetching time: 109 ms, total result sets count: 1
+-- 2018-10-18 12:20:30 [python] [118.190.115.95] [introspection] [session id: 1997356411] disconnected
+-- 2018-10-18 12:23:02 [python] [公司数据库] [introspection] [session id: 1997356412] connected
+-- 2018-10-18 12:23:02 [python] [公司数据库] [introspection] [session id: 1997356412] disconnected
+-- 2018-10-18 12:56:30 [python] [@118.190.115.95] [introspection] [session id: 1997356413] connected
+-- 2018-10-18 12:56:30 [python] [@118.190.115.95] [introspection] [session id: 1997356413] disconnected
+-- 2018-10-18 12:56:32 [python] [@118.190.115.95] [introspection] [session id: 1997356414] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789475] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789475] results received
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789475] finished - execution time: 63 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789476] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789476] results received
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789476] finished - execution time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789477] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789477] results received
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789477] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789478] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789478] results received
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789478] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789479] 
+select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789479] results received
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789479] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:33 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789480] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789480] results received
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789480] finished - execution time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789481] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789481] results received
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789481] finished - execution time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789482] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789482] results received
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789482] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789483] 
+select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789483] results received
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789483] finished - execution time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789484] 
+select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* */null 
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = ?
+order by table_name, ordinal_position
+-- ] --------------------------------------------------
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789484] results received
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] [statement id: 104789484] finished - execution time: 125 ms, fetching time: 94 ms, total result sets count: 1
+-- 2018-10-18 12:56:34 [python] [@118.190.115.95] [introspection] [session id: 1997356414] disconnected
+-- 2018-10-18 13:07:37 [python] [@118.190.115.95] [introspection] [session id: 1997356415] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:37 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789485] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:37 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789485] results received
+-- 2018-10-18 13:07:37 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789485] finished - execution time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789486] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789486] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789486] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789487] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789487] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789487] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789488] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789488] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789488] finished - execution time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789489] 
+select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789489] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789489] finished - execution time: 31 ms, fetching time: 16 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789490] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789490] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789490] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789491] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789491] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789491] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789492] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789492] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789492] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789493] 
+select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789493] results received
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789493] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:38 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789494] 
+select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* */null 
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = ?
+order by table_name, ordinal_position
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789494] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789494] finished - execution time: 94 ms, fetching time: 140 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789495] 
+select
+  table_name,
+  index_name,
+  /* null */ index_comment,
+  index_type,
+  group_concat(replace(replace(column_name, '\\', '\\\\'), '\n', '\\n') order by seq_in_index separator '\n' ) as column_names,
+  non_unique
+/* from (select * */
+from information_schema.statistics
+where table_schema = ? and
+      index_schema = ? and
+      index_name collate utf8_general_ci /* index_name */ <> 'PRIMARY'
+/* order by table_catalog, table_schema, table_name, index_name, index_type, non_unique, seq_in_index) s */
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_comment,
+  index_type,
+  non_unique
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789495] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789495] finished - execution time: 93 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789496] 
+select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(replace(replace(u.column_name, '\\', '\\\\'), '\n', '\\n') order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(replace(replace(u.referenced_column_name, '\\', '\\\\'), '\n', '\\n') order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = ?
+  and if (c.constraint_type collate utf8_general_ci /* c.constraint_type */ = 'UNIQUE', u.referenced_table_name is null, true)
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = ?
+  and u.table_schema = ?
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789496] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789496] finished - execution time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789497] 
+select
+  trigger_name,
+  event_object_table,
+  event_manipulation,
+  action_timing
+from information_schema.triggers
+where trigger_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789497] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789497] finished - execution time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789498] 
+select
+  event_name,
+  event_comment,
+  definer,
+  event_type = 'RECURRING' recurring,
+  interval_value,
+  interval_field,
+  cast(coalesce(starts, execute_at) as char) starts,
+  cast(ends as char) ends,
+  status,
+  on_completion = 'PRESERVE' preserve,
+  last_executed
+from information_schema.events
+where event_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789498] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789498] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789499] 
+select
+  specific_name,
+  routine_type,
+  routine_definition,
+  routine_comment,
+  dtd_identifier
+from information_schema.routines
+where routine_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789499] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789499] finished - execution time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789500] 
+select table_name from information_schema.tables
+where table_schema collate utf8_general_ci /* lower(table_schema) */ = 'information_schema'
+  and table_name collate utf8_general_ci /* lower(table_name) */ = 'parameters'
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789500] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789500] finished - execution time: 16 ms, fetching time: 15 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789501] 
+select specific_name,
+  ordinal_position,
+  parameter_name,
+  parameter_mode,
+  dtd_identifier
+from information_schema.parameters
+where specific_schema = ? and ordinal_position > 0
+order by specific_name, ordinal_position
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789501] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789501] finished - execution time: 46 ms, fetching time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789502] 
+select table_name, view_definition
+from information_schema.views
+where table_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789502] results received
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789502] finished - execution time: 78 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:39 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789503] 
+select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789503] results received
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789503] finished - execution time: 62 ms, fetching time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789504] 
+show create procedure jzt2.pro_get_number
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789504] results received
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789504] finished - execution time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789505] 
+select
+  trigger_name,
+  event_object_table,
+  action_statement
+from information_schema.triggers
+where trigger_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789505] results received
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789505] finished - execution time: 94 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789506] 
+select
+  event_name,
+  event_definition
+from information_schema.events
+where event_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789506] results received
+-- 2018-10-18 13:07:40 [python] [@118.190.115.95] [introspection] [session id: 1997356415] [statement id: 104789506] finished - execution time: 78 ms, total result sets count: 1
+-- 2018-10-18 13:07:41 [python] [@118.190.115.95] [introspection] [session id: 1997356415] disconnected
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789507] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789507] finished - execution time: 47 ms
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789508] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789508] results received
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789508] finished - execution time: 16 ms, fetching time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789509] 
+SELECT t.* FROM jzt2.aliyun_msg t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789509] results received
+-- 2018-10-18 13:07:48 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] [statement id: 104789509] finished - execution time: 63 ms, fetching time: 327 ms, total result sets count: 1
+-- 2018-10-18 13:07:51 [python] [@118.190.115.95] [data editor: aliyun_msg] [session id: 1997356416] disconnected
+-- 2018-10-18 13:22:54 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789510] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789510] results received
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789510] finished - execution time: 31 ms, fetching time: 47 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789511] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789511] results received
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789511] finished - execution time: 31 ms, fetching time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789512] 
+SELECT login_credentials FROM uc_user_consignor WHERE phone = 13400000000
+-- ] --------------------------------------------------
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789512] error - [3D000][1046] No database selected
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789512] finished - execution time: 109 ms
+-- 2018-10-18 13:22:55 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789513] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789513] results received
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789513] warning - [3D000][1046] No database selected
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789513] finished - execution time: 31 ms, fetching time: 31 ms, total result sets count: 1
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789514] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789514] results received
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789514] warning - [3D000][1046] No database selected
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789514] finished - execution time: 32 ms, fetching time: 46 ms, total result sets count: 1
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789515] 
+select login_credentials from uc_user_consignor WHERE phone = 13400000000
+-- ] --------------------------------------------------
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789515] error - [3D000][1046] No database selected
+-- 2018-10-18 13:23:17 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789515] finished - execution time: 93 ms
+-- 2018-10-18 13:23:18 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789516] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789516] results received
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789516] warning - [3D000][1046] No database selected
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789516] finished - execution time: 31 ms, fetching time: 32 ms, total result sets count: 1
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789517] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789517] results received
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789517] warning - [3D000][1046] No database selected
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789517] finished - execution time: 31 ms, fetching time: 47 ms, total result sets count: 1
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] warning - [3D000][1046] No database selected
+-- [ --------------------------------------------------
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789518] 
+SELECT login_credentials FROM jzt2.uc_user_consignor where phone = 13400000000
+-- ] --------------------------------------------------
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789518] results received
+-- 2018-10-18 13:24:06 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] [statement id: 104789518] finished - execution time: 94 ms, fetching time: 78 ms, total result sets count: 1
+-- 2018-10-18 15:47:33 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789519] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789519] finished - execution time: 57 ms
+-- [ --------------------------------------------------
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789520] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789520] results received
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789520] finished - execution time: 74 ms, fetching time: 40 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789521] 
+SELECT t.* FROM jzt2.uc_user_driver t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789521] results received
+-- 2018-10-18 15:47:34 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] [statement id: 104789521] finished - execution time: 87 ms, fetching time: 179 ms, total result sets count: 1
+-- 2018-10-18 15:55:01 [python] [@118.190.115.95] [data editor: uc_user_driver] [session id: 1997356418] disconnected
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789522] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789522] finished - execution time: 47 ms
+-- [ --------------------------------------------------
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789523] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789523] results received
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789523] finished - execution time: 26 ms, fetching time: 29 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789524] 
+SELECT t.* FROM jzt2.order_sub_order t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789524] results received
+-- 2018-10-18 15:55:29 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] [statement id: 104789524] finished - execution time: 72 ms, fetching time: 505 ms, total result sets count: 1
+-- 2018-10-18 15:58:09 [python] [@118.190.115.95] [introspection] [session id: 1997356420] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:09 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789525] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:09 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789525] results received
+-- 2018-10-18 15:58:09 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789525] finished - execution time: 26 ms, fetching time: 9 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789526] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789526] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789526] finished - execution time: 24 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789527] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789527] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789527] finished - execution time: 24 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789528] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789528] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789528] finished - execution time: 24 ms, fetching time: 4 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789529] 
+select
+  collation_name,
+  character_set_name,
+  is_default collate utf8_general_ci /* is_default */ = 'Yes' as is_default
+from information_schema.collations
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789529] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789529] finished - execution time: 28 ms, fetching time: 8 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789530] 
+select @@default_storage_engine, @@default_tmp_storage_engine
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789530] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789530] finished - execution time: 24 ms, fetching time: 2 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789531] 
+select @@GLOBAL.lower_case_table_names
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789531] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789531] finished - execution time: 23 ms, fetching time: 2 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789532] 
+select schema_name, default_collation_name
+from information_schema.schemata
+order by if(schema() = schema_name, 1, 2), schema_name
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789532] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789532] finished - execution time: 24 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789533] 
+select table_name, table_type, table_comment, engine, table_collation
+from information_schema.tables
+where table_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789533] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789533] finished - execution time: 26 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789534] 
+select
+  ordinal_position,
+  column_name,
+  column_type,
+  column_default,
+/* */null 
+  generation_expression,
+  table_name,
+  column_comment,
+  is_nullable,
+  extra,
+  collation_name
+from information_schema.columns
+where table_schema = ?
+order by table_name, ordinal_position
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789534] results received
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789534] finished - execution time: 94 ms, fetching time: 116 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:10 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789535] 
+select
+  table_name,
+  index_name,
+  /* null */ index_comment,
+  index_type,
+  group_concat(replace(replace(column_name, '\\', '\\\\'), '\n', '\\n') order by seq_in_index separator '\n' ) as column_names,
+  non_unique
+/* from (select * */
+from information_schema.statistics
+where table_schema = ? and
+      index_schema = ? and
+      index_name collate utf8_general_ci /* index_name */ <> 'PRIMARY'
+/* order by table_catalog, table_schema, table_name, index_name, index_type, non_unique, seq_in_index) s */
+group by
+  table_catalog,
+  table_schema,
+  table_name,
+  index_name,
+  index_comment,
+  index_type,
+  non_unique
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789535] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789535] finished - execution time: 39 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789536] 
+select
+  c.constraint_name,
+  c.table_name,
+  c.constraint_type,
+  group_concat(replace(replace(u.column_name, '\\', '\\\\'), '\n', '\\n') order by u.ordinal_position separator '\n' ) as column_names,
+  u.referenced_table_schema,
+  u.referenced_table_name,
+  group_concat(replace(replace(u.referenced_column_name, '\\', '\\\\'), '\n', '\\n') order by u.position_in_unique_constraint separator '\n') as ref_column_names,
+  r.match_option,
+  r.update_rule,
+  r.delete_rule
+from information_schema.table_constraints c
+  left join information_schema.key_column_usage u on
+      u.constraint_schema   = c.constraint_schema
+  and u.constraint_name     = c.constraint_name
+  and u.table_name = c.table_name
+  and u.table_schema = ?
+  and if (c.constraint_type collate utf8_general_ci /* c.constraint_type */ = 'UNIQUE', u.referenced_table_name is null, true)
+  left join information_schema.referential_constraints r on
+      r.constraint_schema   = c.constraint_schema
+  and r.constraint_name     = c.constraint_name
+where c.table_schema = ?
+  and u.table_schema = ?
+group by
+    c.constraint_schema
+  , c.constraint_name
+  , c.table_schema
+  , c.table_name
+  , c.constraint_type
+  , u.referenced_table_schema
+  , u.referenced_table_name
+  , r.match_option
+  , r.update_rule
+  , r.delete_rule
+order by
+    c.table_schema
+  , c.table_name
+  , c.constraint_schema
+  , c.constraint_name
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789536] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789536] finished - execution time: 33 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789537] 
+select
+  trigger_name,
+  event_object_table,
+  event_manipulation,
+  action_timing
+from information_schema.triggers
+where trigger_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789537] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789537] finished - execution time: 29 ms, fetching time: 2 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789538] 
+select
+  event_name,
+  event_comment,
+  definer,
+  event_type = 'RECURRING' recurring,
+  interval_value,
+  interval_field,
+  cast(coalesce(starts, execute_at) as char) starts,
+  cast(ends as char) ends,
+  status,
+  on_completion = 'PRESERVE' preserve,
+  last_executed
+from information_schema.events
+where event_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789538] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789538] finished - execution time: 27 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789539] 
+select
+  specific_name,
+  routine_type,
+  routine_definition,
+  routine_comment,
+  dtd_identifier
+from information_schema.routines
+where routine_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789539] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789539] finished - execution time: 25 ms, fetching time: 3 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789540] 
+select table_name from information_schema.tables
+where table_schema collate utf8_general_ci /* lower(table_schema) */ = 'information_schema'
+  and table_name collate utf8_general_ci /* lower(table_name) */ = 'parameters'
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789540] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789540] finished - execution time: 26 ms, fetching time: 2 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789541] 
+select specific_name,
+  ordinal_position,
+  parameter_name,
+  parameter_mode,
+  dtd_identifier
+from information_schema.parameters
+where specific_schema = ? and ordinal_position > 0
+order by specific_name, ordinal_position
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789541] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789541] finished - execution time: 47 ms, fetching time: 24 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789542] 
+select table_name, view_definition
+from information_schema.views
+where table_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789542] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789542] finished - execution time: 68 ms, fetching time: 1 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789543] 
+select specific_name, routine_definition
+from information_schema.routines
+where routine_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789543] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789543] finished - execution time: 46 ms, fetching time: 24 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789544] 
+show create procedure jzt2.pro_get_number
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789544] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789544] finished - execution time: 24 ms, fetching time: 2 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789545] 
+select
+  trigger_name,
+  event_object_table,
+  action_statement
+from information_schema.triggers
+where trigger_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789545] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789545] finished - execution time: 72 ms, fetching time: 2 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789546] 
+select
+  event_name,
+  event_definition
+from information_schema.events
+where event_schema = ?
+-- ] --------------------------------------------------
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789546] results received
+-- 2018-10-18 15:58:11 [python] [@118.190.115.95] [introspection] [session id: 1997356420] [statement id: 104789546] finished - execution time: 67 ms, fetching time: 1 ms, total result sets count: 1
+-- 2018-10-18 15:58:12 [python] [@118.190.115.95] [introspection] [session id: 1997356420] disconnected
+-- 2018-10-18 15:58:23 [python] [@118.190.115.95] [data editor: order_sub_order] [session id: 1997356419] disconnected
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789547] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789547] finished - execution time: 44 ms
+-- [ --------------------------------------------------
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789548] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789548] results received
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789548] finished - execution time: 24 ms, fetching time: 27 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789549] 
+SELECT t.* FROM jzt2.order_total_order t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-18 15:59:15 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789549] results received
+-- 2018-10-18 15:59:16 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] [statement id: 104789549] finished - execution time: 67 ms, fetching time: 441 ms, total result sets count: 1
+-- 2018-10-18 16:00:01 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356417] disconnected
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789550] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789550] results received
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789550] finished - execution time: 31 ms, fetching time: 36 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789551] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789551] results received
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789551] finished - execution time: 29 ms, fetching time: 32 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789552] 
+SELECT id FROM jzt2.order_total_order where order_no = 9F55100000000542
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789552] error - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789552] finished - execution time: 93 ms
+-- 2018-10-18 16:00:03 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789553] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789553] results received
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789553] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789553] finished - execution time: 30 ms, fetching time: 31 ms, total result sets count: 1
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789554] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789554] results received
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789554] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789554] finished - execution time: 29 ms, fetching time: 31 ms, total result sets count: 1
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789555] 
+SELECT id FROM jzt2.order_total_order where order_no like 9F55100000000542
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789555] error - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789555] finished - execution time: 85 ms
+-- 2018-10-18 16:00:21 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789556] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789556] results received
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789556] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789556] finished - execution time: 29 ms, fetching time: 32 ms, total result sets count: 1
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789557] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789557] results received
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789557] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789557] finished - execution time: 29 ms, fetching time: 32 ms, total result sets count: 1
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:33 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789558] 
+SELECT id FROM jzt2.order_total_order where order_no like 9F55100000000542
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:34 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789558] error - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:34 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789558] finished - execution time: 85 ms
+-- 2018-10-18 16:00:34 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789559] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789559] results received
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789559] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789559] finished - execution time: 29 ms, fetching time: 32 ms, total result sets count: 1
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789560] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789560] results received
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789560] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789560] finished - execution time: 29 ms, fetching time: 32 ms, total result sets count: 1
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] warning - [42S22][1054] Unknown column '9F55100000000542' in 'where clause'
+-- [ --------------------------------------------------
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789561] 
+SELECT id FROM jzt2.order_total_order where order_no like '9F55100000000542'
+-- ] --------------------------------------------------
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789561] results received
+-- 2018-10-18 16:00:42 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] [statement id: 104789561] finished - execution time: 85 ms, fetching time: 72 ms, total result sets count: 1
+-- 2018-10-18 16:00:52 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356421] disconnected
+-- 2018-10-18 16:23:22 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356422] disconnected
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789562] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789562] results received
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789562] finished - execution time: 33 ms, fetching time: 36 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789563] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789563] results received
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789563] finished - execution time: 33 ms, fetching time: 34 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789564] 
+SELECT id FROM jzt2.order_total_order where order_no like '9F55100000000542'
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789564] results received
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789564] finished - execution time: 97 ms, fetching time: 80 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789565] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789565] results received
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789565] finished - execution time: 33 ms, fetching time: 35 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789566] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789566] results received
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789566] finished - execution time: 33 ms, fetching time: 35 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:23 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789567] 
+SELECT id FROM jzt2.order_total_order where order_no like '9F55100000000542'
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789567] results received
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789567] finished - execution time: 96 ms, fetching time: 70 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789568] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789568] results received
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789568] finished - execution time: 33 ms, fetching time: 34 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789569] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789569] results received
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789569] finished - execution time: 33 ms, fetching time: 34 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789570] 
+SELECT id FROM jzt2.order_total_order where order_no like '9F55100000000542'
+-- ] --------------------------------------------------
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789570] results received
+-- 2018-10-18 16:23:24 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] [statement id: 104789570] finished - execution time: 96 ms, fetching time: 68 ms, total result sets count: 1
+-- 2018-10-18 17:15:49 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356423] disconnected
+-- 2018-10-18 17:15:49 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 17:15:49 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789571] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 17:15:49 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789571] results received
+-- 2018-10-18 17:15:50 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789571] finished - execution time: 34 ms, fetching time: 36 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 17:15:50 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789572] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 17:15:50 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789572] results received
+-- 2018-10-18 17:15:50 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789572] finished - execution time: 32 ms, fetching time: 33 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 17:15:50 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789573] 
+SELECT id FROM jzt2.order_total_order where order_no like '9F55100000000547'
+-- ] --------------------------------------------------
+-- 2018-10-18 17:15:50 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789573] results received
+-- 2018-10-18 17:15:50 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] [statement id: 104789573] finished - execution time: 96 ms, fetching time: 90 ms, total result sets count: 1
+-- 2018-10-18 17:16:48 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 17:16:48 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789574] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-18 17:16:48 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789574] finished - execution time: 52 ms
+-- [ --------------------------------------------------
+-- 2018-10-18 17:16:49 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789575] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 17:16:49 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789575] results received
+-- 2018-10-18 17:16:49 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789575] finished - execution time: 29 ms, fetching time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 17:16:49 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789576] 
+SELECT t.* FROM jzt2.order_total_order t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-18 17:16:49 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789576] results received
+-- 2018-10-18 17:16:49 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] [statement id: 104789576] finished - execution time: 80 ms, fetching time: 427 ms, total result sets count: 1
+-- 2018-10-18 17:16:56 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356425] disconnected
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] connected
+-- [ --------------------------------------------------
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789577] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789577] finished - execution time: 58 ms
+-- [ --------------------------------------------------
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789578] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789578] results received
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789578] finished - execution time: 31 ms, fetching time: 34 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789579] 
+SELECT t.* FROM jzt2.order_total_order t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-18 19:28:45 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789579] results received
+-- 2018-10-18 19:28:46 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] [statement id: 104789579] finished - execution time: 104 ms, fetching time: 446 ms, total result sets count: 1
+-- 2018-10-18 19:28:49 [python] [@118.190.115.95] [data editor: order_total_order] [session id: 1997356426] disconnected
+-- 2018-10-18 19:40:15 [python] [@118.190.115.95] [console: @118.190.115.95] [session id: 1997356424] disconnected
+-- 2018-10-19 09:02:30 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] connected
+-- [ --------------------------------------------------
+-- 2018-10-19 09:02:30 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366479] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-19 09:02:30 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366479] finished - execution time: 61 ms
+-- [ --------------------------------------------------
+-- 2018-10-19 09:02:30 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366480] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 09:02:30 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366480] results received
+-- 2018-10-19 09:02:30 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366480] finished - execution time: 86 ms, fetching time: 49 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:02:31 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366481] 
+SELECT t.* FROM jzt2.uc_user_carrier t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 09:02:31 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366481] results received
+-- 2018-10-19 09:02:31 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] [statement id: 945366481] finished - execution time: 91 ms, fetching time: 302 ms, total result sets count: 1
+-- 2018-10-19 09:03:31 [python] [@118.190.115.95] [data editor: uc_user_carrier] [session id: 363818220] disconnected
+-- 2018-10-19 09:03:37 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] connected
+-- [ --------------------------------------------------
+-- 2018-10-19 09:03:37 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366482] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-19 09:03:38 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366482] finished - execution time: 45 ms
+-- [ --------------------------------------------------
+-- 2018-10-19 09:03:38 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366483] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 09:03:38 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366483] results received
+-- 2018-10-19 09:03:38 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366483] finished - execution time: 24 ms, fetching time: 29 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:03:38 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366484] 
+SELECT t.* FROM jzt2.trade_account t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 09:03:38 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366484] results received
+-- 2018-10-19 09:03:38 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366484] finished - execution time: 68 ms, fetching time: 123 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:04:04 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366485] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 09:04:04 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366485] results received
+-- 2018-10-19 09:04:04 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366485] finished - execution time: 24 ms, fetching time: 28 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:04:04 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366486] 
+SELECT t.* FROM jzt2.trade_account t
+ORDER BY create_date ASC
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 09:04:04 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366486] results received
+-- 2018-10-19 09:04:04 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366486] finished - execution time: 67 ms, fetching time: 111 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366487] 
+UPDATE `jzt2`.`trade_account` t SET t.`credit_point` = ? WHERE t.`id` LIKE ? ESCAPE '#'
+-- ] --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366487] update count received - 1
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366487] finished - execution time: 36 ms, fetching time: 26 ms, total update count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366488] 
+UPDATE `jzt2`.`trade_account` t SET t.`credit_point` = ? WHERE t.`id` LIKE ? ESCAPE '#'
+-- ] --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366488] update count received - 1
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366488] finished - execution time: 24 ms, fetching time: 23 ms, total update count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366489] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366489] results received
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366489] finished - execution time: 25 ms, fetching time: 26 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366490] 
+SELECT t.* FROM jzt2.trade_account t
+ORDER BY create_date ASC
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366490] results received
+-- 2018-10-19 09:04:43 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] [statement id: 945366490] finished - execution time: 67 ms, fetching time: 72 ms, total result sets count: 1
+-- 2018-10-19 09:04:58 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818221] disconnected
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] connected
+-- [ --------------------------------------------------
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366491] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366491] finished - execution time: 54 ms
+-- [ --------------------------------------------------
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366492] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366492] results received
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366492] finished - execution time: 32 ms, fetching time: 31 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366493] 
+SELECT t.* FROM jzt2.trade_account t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366493] results received
+-- 2018-10-19 09:45:47 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] [statement id: 945366493] finished - execution time: 82 ms, fetching time: 109 ms, total result sets count: 1
+-- 2018-10-19 09:46:12 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818222] disconnected
+-- 2018-10-19 10:48:07 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] connected
+-- [ --------------------------------------------------
+-- 2018-10-19 10:48:07 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366494] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-19 10:48:07 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366494] finished - execution time: 160 ms
+-- [ --------------------------------------------------
+-- 2018-10-19 10:48:08 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366495] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 10:48:08 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366495] results received
+-- 2018-10-19 10:48:08 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366495] finished - execution time: 83 ms, fetching time: 96 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 10:48:08 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366496] 
+SELECT t.* FROM jzt2.trade_account t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 10:48:08 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366496] results received
+-- 2018-10-19 10:48:08 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366496] finished - execution time: 220 ms, fetching time: 241 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 10:48:14 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366497] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 10:48:14 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366497] results received
+-- 2018-10-19 10:48:14 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366497] finished - execution time: 84 ms, fetching time: 85 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 10:48:14 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366498] 
+SELECT t.* FROM jzt2.trade_account t
+ORDER BY credit_point ASC
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 10:48:14 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366498] results received
+-- 2018-10-19 10:48:15 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366498] finished - execution time: 197 ms, fetching time: 163 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 10:48:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366499] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 10:48:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366499] results received
+-- 2018-10-19 10:48:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366499] finished - execution time: 72 ms, fetching time: 83 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 10:48:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366500] 
+SELECT t.* FROM jzt2.trade_account t
+ORDER BY credit_point ASC
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 10:48:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366500] results received
+-- 2018-10-19 10:48:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366500] finished - execution time: 200 ms, fetching time: 170 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 10:49:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366501] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 10:49:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366501] results received
+-- 2018-10-19 10:49:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366501] finished - execution time: 29 ms, fetching time: 25 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 10:49:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366502] 
+SELECT t.* FROM jzt2.trade_account t
+ORDER BY credit_point ASC
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 10:49:40 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366502] results received
+-- 2018-10-19 10:49:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] [statement id: 945366502] finished - execution time: 92 ms, fetching time: 115 ms, total result sets count: 1
+-- 2018-10-19 10:50:09 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818223] disconnected
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] connected
+-- [ --------------------------------------------------
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366503] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366503] finished - execution time: 54 ms
+-- [ --------------------------------------------------
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366504] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366504] results received
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366504] finished - execution time: 28 ms, fetching time: 30 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366505] 
+SELECT t.* FROM jzt2.trade_account t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366505] results received
+-- 2018-10-19 11:06:01 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366505] finished - execution time: 81 ms, fetching time: 105 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 11:06:05 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366506] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 11:06:05 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366506] results received
+-- 2018-10-19 11:06:05 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366506] finished - execution time: 29 ms, fetching time: 30 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 11:06:05 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366507] 
+SELECT t.* FROM jzt2.trade_account t
+ORDER BY credit_point ASC
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 11:06:05 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366507] results received
+-- 2018-10-19 11:06:05 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] [statement id: 945366507] finished - execution time: 81 ms, fetching time: 77 ms, total result sets count: 1
+-- 2018-10-19 11:06:27 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818224] disconnected
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] connected
+-- [ --------------------------------------------------
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366508] 
+use jzt2
+-- ] --------------------------------------------------
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366508] finished - execution time: 66 ms
+-- [ --------------------------------------------------
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366509] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366509] results received
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366509] finished - execution time: 35 ms, fetching time: 36 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366510] 
+SELECT t.* FROM jzt2.trade_account t
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366510] results received
+-- 2018-10-19 11:08:41 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366510] finished - execution time: 98 ms, fetching time: 114 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 11:08:45 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366511] 
+select database()
+-- ] --------------------------------------------------
+-- 2018-10-19 11:08:45 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366511] results received
+-- 2018-10-19 11:08:45 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366511] finished - execution time: 35 ms, fetching time: 37 ms, total result sets count: 1
+-- [ --------------------------------------------------
+-- 2018-10-19 11:08:45 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366512] 
+SELECT t.* FROM jzt2.trade_account t
+ORDER BY credit_point ASC
+LIMIT 501
+-- ] --------------------------------------------------
+-- 2018-10-19 11:08:45 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366512] results received
+-- 2018-10-19 11:08:45 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] [statement id: 945366512] finished - execution time: 98 ms, fetching time: 90 ms, total result sets count: 1
+-- 2018-10-19 13:51:55 [python] [@118.190.115.95] [data editor: trade_account] [session id: 363818225] disconnected

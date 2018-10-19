@@ -1,0 +1,19 @@
+<scheme name="_@user_Darcula" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="created">2018-09-20T10:37:12</property>
+    <property name="ide">Python</property>
+    <property name="ideVersion">2018.2.3.0.0</property>
+    <property name="modified">2018-09-20T10:44:46</property>
+    <property name="originalScheme">Darcula</property>
+  </metaInfo>
+  <option name="CONSOLE_FONT_NAME" value="Hack" />
+  <option name="CONSOLE_LINE_SPACING" value="1.0" />
+  <attributes>
+    <option name="PY.LINE_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="804145" />
+      </value>
+    </option>
+  </attributes>
+</scheme>

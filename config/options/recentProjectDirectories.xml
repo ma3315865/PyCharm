@@ -1,0 +1,31 @@
+<application>
+  <component name="RecentDirectoryProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="D:/python" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="D:/python" />
+      </list>
+    </option>
+    <option name="lastPath" value="D:/python" />
+    <option name="pid" value="" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="D:/python">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="PY-182.4505.26" />
+              <option name="productionCode" value="PY" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1539928315615" />
+              <option name="buildTimestamp" value="1537358515357" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>
